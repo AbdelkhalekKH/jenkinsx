@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: AbdelkhalekKH
+    provider: github
+    repository: angtest3
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: abdelkhalekkh-angtest3
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/AbdelkhalekKH/angtest3.git
+  org: AbdelkhalekKH
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: angtest3
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/AbdelkhalekKH/angtest3
