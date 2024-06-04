@@ -90,7 +90,7 @@
     ingresses:
     - name: docker-registry
       url: http://docker-registry-jx.192.168.49.2.nip.io/
-    lastDeployed: "2024-06-04T00:09:41Z"
+    lastDeployed: "2024-06-04T00:42:26Z"
     maintainers:
     - email: devin@canterberry.cc
       name: Devin Canterberry
@@ -160,7 +160,7 @@
     - jenkins
     - ci
     - devops
-    lastDeployed: "2024-06-04T00:09:41Z"
+    lastDeployed: "2024-06-04T00:42:26Z"
     maintainers:
     - email: maor.friedman@redhat.com
       name: maorfr
@@ -190,7 +190,7 @@
     firstDeployed: "2024-06-04T00:09:41Z"
     home: https://github.com/jenkins-x-charts/jenkins-resources
     icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
-    lastDeployed: "2024-06-04T00:09:41Z"
+    lastDeployed: "2024-06-04T00:42:26Z"
     name: jenkins-resources
     releaseName: jenkins-resources
     repositoryName: jxgh
