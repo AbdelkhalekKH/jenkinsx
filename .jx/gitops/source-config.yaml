@@ -18,6 +18,8 @@ spec:
       repositories:
       - name: backendtest
         scheduler: in-repo
+      - name: backendtest1
+        scheduler: in-repo
     server: myjenkins
   slack:
     channel: '#jenkins-x-pipelines'
