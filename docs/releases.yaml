@@ -90,7 +90,7 @@
     ingresses:
     - name: docker-registry
       url: http://docker-registry-jx.192.168.49.2.nip.io/
-    lastDeployed: "2024-06-03T17:15:18Z"
+    lastDeployed: "2024-06-04T00:09:41Z"
     maintainers:
     - email: devin@canterberry.cc
       name: Devin Canterberry
@@ -122,6 +122,81 @@
     - https://github.com/jenkins-x-plugins/jx-build-controller
     - https://github.com/jenkins-x-plugins/jx-build-controller.git
     version: 0.5.9
+- namespace: myjenkins
+  path: helmfiles/myjenkins/helmfile.yaml
+  releases:
+  - annotations:
+      artifacthub.io/category: integration-delivery
+      artifacthub.io/changes: |
+        - Update `kubernetes` to version `4238.v41b_3ef14a_5d8`
+      artifacthub.io/images: |
+        - name: jenkins
+          image: docker.io/jenkins/jenkins:2.452.1-jdk17
+        - name: k8s-sidecar
+          image: docker.io/kiwigrid/k8s-sidecar:1.27.2
+        - name: inbound-agent
+          image: jenkins/inbound-agent:3248.v65ecb_254c298-1
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins
+        - name: Jenkins
+          url: https://www.jenkins.io/
+        - name: support
+          url: https://github.com/jenkinsci/helm-charts/issues
+    apiVersion: v2
+    appVersion: 2.452.1
+    applicationUrl: http://jenkins-myjenkins.192.168.49.2.nip.io
+    description: 'Jenkins - Build great things at any scale! As the leading open source
+      automation server, Jenkins provides over 1800 plugins to support building, deploying
+      and automating any project. '
+    firstDeployed: "2024-06-04T00:09:41Z"
+    home: https://www.jenkins.io/
+    icon: https://get.jenkins.io/art/jenkins-logo/logo.svg
+    ingresses:
+    - name: jenkins
+      url: http://jenkins-myjenkins.192.168.49.2.nip.io
+    keywords:
+    - jenkins
+    - ci
+    - devops
+    lastDeployed: "2024-06-04T00:09:41Z"
+    maintainers:
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    - email: garridomota@gmail.com
+      name: mogaal
+    - email: wmcdona89@gmail.com
+      name: wmcdona89
+    - email: timjacomb1@gmail.com
+      name: timja
+    name: jenkins
+    releaseName: jenkins
+    repositoryName: jenkinsci
+    repositoryUrl: https://charts.jenkins.io
+    resourcePath: config-root/namespaces/myjenkins/jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-inbound-agent
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    type: application
+    version: 5.1.26
+  - apiVersion: v1
+    appVersion: 1.0.0
+    description: A Helm chart for Jenkins Resources
+    firstDeployed: "2024-06-04T00:09:41Z"
+    home: https://github.com/jenkins-x-charts/jenkins-resources
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    lastDeployed: "2024-06-04T00:09:41Z"
+    name: jenkins-resources
+    releaseName: jenkins-resources
+    repositoryName: jxgh
+    repositoryUrl: https://jenkins-x-charts.github.io/repo
+    resourcePath: config-root/namespaces/myjenkins/jenkins-resources
+    version: 0.0.7
 - namespace: tekton-pipelines
   path: helmfiles/tekton-pipelines/helmfile.yaml
   releases:
