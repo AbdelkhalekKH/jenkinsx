@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         AbdelkhalekKH/angtest3: true
+        AbdelkhalekKH/backendtest3: true
         AbdelkhalekKH/jenkinsx: true
     plank: {}
     pod_namespace: jx
@@ -21,6 +22,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         AbdelkhalekKH/angtest3: merge
+        AbdelkhalekKH/backendtest3: merge
         AbdelkhalekKH/jenkinsx: merge
       queries:
       - labels:
@@ -34,6 +36,7 @@ data:
         repos:
         - AbdelkhalekKH/jenkinsx
         - AbdelkhalekKH/angtest3
+        - AbdelkhalekKH/backendtest3
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - AbdelkhalekKH/jenkinsx
         - AbdelkhalekKH/angtest3
+        - AbdelkhalekKH/backendtest3
       target_url: http://lighthouse-jx.192.168.49.2.nip.io/merge/status
 kind: ConfigMap
 metadata:
