@@ -10,6 +10,15 @@ spec:
     repositories:
     - name: angtest3
     scheduler: in-repo
+  jenkinsServers:
+  - groups:
+    - owner: AbdelkhalekKH
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: backendtest
+        scheduler: in-repo
+    server: myjenkins
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
