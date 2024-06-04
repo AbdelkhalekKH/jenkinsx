@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: angtest3
+    - name: backendtest3
     scheduler: in-repo
   jenkinsServers:
   - groups:
