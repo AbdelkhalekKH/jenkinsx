@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "jenkins-ui-test-kywcu"
+  name: "jenkins-ui-test-cdynl"
   namespace: myjenkins
   annotations:
     "helm.sh/hook": test-success
